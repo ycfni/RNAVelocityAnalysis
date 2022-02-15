@@ -1,0 +1,14 @@
+# editor artifacts
+*.swo
+*.swp
+
+# data-heavy subdirectories
+data
+calc
+
+# per-run log directories
+jobs
+
+# python virtual environment
+venv
+

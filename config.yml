@@ -1,0 +1,38 @@
+user_info:
+    email: rahul.dhodapkar@yale.edu
+    mail_type: ALL
+runtime:
+    conda_env_name: rna_velocity
+    partition: general
+    repeat_mask_location: /home/rd389/scratch60/ref/GRCh38_rmsk.gtf
+    cellranger_gtf_location: /home/rd389/scratch60/ref/Homo_sapiens.GRCh38.93.filtered.gtf
+file_templates:
+    external_archive_location: "/SAY/standard/ycfni01-CC1410-MEDPAT/rd389/MaculaSingleNucleusRNASeq/cellranger/{sample}.tar"
+    archive_file: "./data/{group}/{sample}.tar"
+    extract_archive_to: "./data/{group}"
+    md5_sumfile: "./checksums/{group}/{sample}.tar.md5"
+    cellranger_outdir: "./data/{group}/{sample}/{sample}"
+    velocyto_slurm_job_dir: "./jobs/{group}/{sample}"
+data:
+    - sample: HC1941W
+      archive_path_head: manual
+      group: hc
+    - sample: HC1969
+      archive_path_head: manual
+      group: hc
+    - sample: HC2003
+      archive_path_head: manual
+      group: hc
+    - sample: HC2016
+      archive_path_head: manual
+      group: hc
+    - sample: G200203MR
+      archive_path_head: manual
+      group: gcma
+    - sample: G200729MR
+      archive_path_head: manual
+      group: gcma
+    - sample: G2056MR
+      archive_path_head: manual
+      group: gcma
+
