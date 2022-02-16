@@ -13,6 +13,9 @@ file_templates:
     md5_sumfile: "./checksums/{group}/{sample}.tar.md5"
     cellranger_outdir: "./data/{group}/{sample}/{sample}"
     velocyto_slurm_job_dir: "./jobs/{group}/{sample}"
+    velocyto_loom_file: "./data/{group}/{sample}/{sample}/velocyto/{sample}.loom"
+    velocyto_loom_file_export_loc: "./out/loom/{group}/{sample}/{sample}.loom"
+    velocyto_merged_export_loc: "./out/merged.loom"
 data:
     - sample: HC1941W
       archive_path_head: manual

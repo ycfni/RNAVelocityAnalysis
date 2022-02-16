@@ -9,7 +9,7 @@
 # @version 2022.02.15
 #
 
-.PHONY: pull check unpack stage submit
+.PHONY: pull check unpack stage submit save
 
 ###############################################################################
 ## SETUP
@@ -38,4 +38,12 @@ stage:
 submit:
 	echo "Submit slurm jobs"
 	./src/analysis/submit_jobs.py
+
+###############################################################################
+## SAVE / COLLATE
+###############################################################################
+
+save:
+	echo "Gathering velocyto output for export"
+	./src/save/collect_outfiles.py
 
