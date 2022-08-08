@@ -39,6 +39,13 @@ The `data` block contains metadata for samples to run.  Note that template
 strings and templated job files will directly depend on variable names
 defined within the data block per sample.
 
+### Reference Files
+The genome reference files used by velocyto may be downloaded using
+[this gist](https://gist.github.com/rahuldhodapkar/376ad1e0396b024f6521fc1beaf388c0).
+The repeat mask file should be downloaded from the UCSC
+Genome Browser, following the instructions from the velocyto documentation
+[linked here](https://velocyto.org/velocyto.py/tutorial/cli.html#download-expressed-repeats-annotation)
+
 ## Additional Configuration
 All code should run within a python `conda` environment, and has been tested
 on the Yale HPC Ruddle cluster.

@@ -4,8 +4,8 @@ user_info:
 runtime:
     conda_env_name: rna_velocity
     partition: general
-    repeat_mask_location: /home/rd389/scratch60/ref/GRCh38_rmsk.gtf
-    cellranger_gtf_location: /home/rd389/scratch60/ref/Homo_sapiens.GRCh38.93.filtered.gtf
+    repeat_mask_location: /home/rd389/scratch60/ref/human/GRCh38_rmsk.gtf
+    cellranger_gtf_location: /home/rd389/scratch60/ref/human/Homo_sapiens.GRCh38.93.filtered.gtf
 file_templates:
     external_archive_location: "/SAY/standard/ycfni01-CC1410-MEDPAT/rd389/MaculaSingleNucleusRNASeq/cellranger/{sample}.tar"
     archive_file: "./data/{group}/{sample}.tar"
