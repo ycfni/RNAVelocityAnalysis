@@ -10,6 +10,7 @@
 import yaml
 import sys
 import subprocess
+import os
 
 cfg = None
 with open('config.yml', 'r') as f:
@@ -25,6 +26,8 @@ for x in cfg['data']:
     print('Syncing archive for {sample}...'.format(**x))
     source_file = cfg['file_templates']['external_archive_location'].format(**x)
     dest_file = cfg['file_templates']['archive_file'].format(**x)
+    os.makedirs(os.path.dirname(dest_file), exist_ok=True)
+    
     args = ['rsync', '-av', source_file, dest_file]
     
     print('... {} -> {}'.format(source_file, dest_file))
