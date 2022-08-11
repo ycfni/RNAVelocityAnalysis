@@ -17,6 +17,9 @@ file_templates:
     velocyto_loom_file_export_loc: "./out/loom/{group}/{sample}/{sample}.loom"
     velocyto_merged_export_loc: "./out/merged.loom"
 data:
+    - sample: A19-0065MR
+      archive_path_head: manual
+      group: hc
     - sample: HC1941W
       archive_path_head: manual
       group: hc
@@ -29,6 +32,15 @@ data:
     - sample: HC2016
       archive_path_head: manual
       group: hc
+    - sample: HC2037
+      archive_path_head: manual
+      group: hc
+    - sample: HC2229
+      archive_path_head: manual
+      group: hc
+    - sample: G190579W
+      archive_path_head: manual
+      group: gcma
     - sample: G200203MR
       archive_path_head: manual
       group: gcma
@@ -38,4 +50,6 @@ data:
     - sample: G2056MR
       archive_path_head: manual
       group: gcma
-
+    - sample: GA220818
+      archive_path_head: manual
+      group: gcma
