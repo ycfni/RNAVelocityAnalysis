@@ -66,6 +66,16 @@ must still be installed via PyPI.  To install these, simply run
 
 after activating the `rna_velocity` conda environment.
 
+You may also need to update your `PATH` and `PYTHONPATH` variables in
+`~/.bash_profile` to allow python to find locally installed things.
+By default, local install will occur in the `~/.local` directory.
+For example, I added:
+
+    export PATH=$PATH:~/.local/bin
+    export PYTHONPATH=$PYTHONPATH:~/.local/lib/python3.9/site-packages/
+
+to my `~/.bash_profile`.
+
 ## Usage
 To make interaction with the system easier, scripts have been packaged
 into discrete runnable chunks with the `make` utility.  Please take a look
